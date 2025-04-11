@@ -8,10 +8,10 @@ binding = "SIREN"
 id = "fc4aed1f47cc4a7f9df9c041fc08591e"
 
 [build]
-command = "cargo install -q worker-build && worker-build --release"
+command = "cargo install worker-build && worker-build --release"
 
 [env.dev]
-build = { command = "cargo install -q worker-build && worker-build --dev" }
+build = { command = "cargo install worker-build && worker-build --dev" }
 
 [vars]
 UUID = "2bcfbfba-b446-4ad5-93ad-72af9e008f61"

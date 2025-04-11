@@ -8,7 +8,7 @@
     "servers": [
       {
         "tag": "dns-out",
-        "address": "https://8.8.8.8/dns-query"
+        "address": "https://1.1.1.1/dns-query"
       }
     ]
   },
@@ -26,11 +26,11 @@
       "tag": "proxy-b",
       "server": "127.0.0.1",
       "server_port": 8787,
-      "uuid": "f282b878-8711-45a1-8c69-5564172123c1",
+      "uuid": "2bcfbfba-b446-4ad5-93ad-72af9e008f61",
       "security": "none",
       "transport": {
         "type": "ws",
-        "path": "/ID",
+        "path": "/free/cc/US",
         "headers": {
           "Host": "127.0.0.1"
         }

@@ -10,6 +10,9 @@ on:
       - 'README.md'
       - 'LICENSE.md'
 
+  schedule:
+    - cron: '0 */1 * * *'
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

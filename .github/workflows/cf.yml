@@ -9,6 +9,8 @@ on:
     paths-ignore:
       - 'README.md'
       - 'LICENSE.md'
+  schedule:
+    - cron: "* */6 * * *"
 
 jobs:
   deploy:

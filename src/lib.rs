@@ -76,14 +76,6 @@ async fn tunnel(req: Request, mut cx: RouteContext<Config>) -> Result<Response> 
             cx.data.proxy_addr = captures.get(1).unwrap().as_str().to_string();
             cx.data.proxy_port = captures.get(2).unwrap().as_str().parse()
                 .map_err(|e| Error::from(format!("Invalid port number: {}", e)))?;
-            let url = format!(
-                "{}/check?ip={}&port={}",
-                cx.data.main_page_url.trim_end_matches('/'),
-                cx.data.proxy_addr, cx.data.proxy_port
-            );
-            wasm_bindgen_futures::spawn_local(async move {
-                let _ = Fetch::Url(Url::parse(&url).unwrap()).send().await;
-            });
         }
         
         let WebSocketPair { server, client } = WebSocketPair::new()?;

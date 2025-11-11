@@ -15,5 +15,5 @@ build = { command = "cargo install worker-build && worker-build --dev" }
 
 [vars]
 UUID = "2bcfbfba-b446-4ad5-93ad-72af9e008f61"
-MAIN_PAGE_URL = "https://siren.cloudaccess.host/"
-PROXY_KV_URL = "https://siren.cloudaccess.host/best-latency.json"
+MAIN_PAGE_URL = "https://server.nuclear.xx.kg/"
+PROXY_KV_URL = "https://server.nuclear.xx.kg/best-latency.json"
